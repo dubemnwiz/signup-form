@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "norse";
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
 body {
     display: flex;
     margin: 0;
@@ -10,25 +15,78 @@ body {
     background-size: cover;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 150px;
+    margin: 150px 0px 0px 0px;
+    height: 150px;
+    background: rgba(0, 0, 0, .4);
+    padding: 4em;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.name {
+    color: white;
+    font-family: "norse";
+    font-size: 80px;
+}
+
 .main {
     flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 12.5% 0;
+    padding: 100px 0px 250px 0px;
     background-color: #f0efef;
 }
 
 .intro {
-    padding: 30px 40px;
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    max-width: 600px;
 }
 
-.create {
-    padding: 0px 40px;
+.intro2 {
+    padding: 0px 40px 50px 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    box-shadow: 3px 3px 5px rgb(200, 200, 200);
+}
+
+.header {
+    padding-left: 40px;
+}
+
+.fields {
+    padding: 0px 40px 20px 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.fields p {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
 }
 
 .button {
-    padding: 0px 40px;
+    padding: 20px 40px;
 }
 
 .button button {
